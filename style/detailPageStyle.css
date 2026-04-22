@@ -1,0 +1,356 @@
+.contentWrapper{
+	width: 80%;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.image-row {
+    display: flex;
+	gap:5px;
+ }
+
+ .right-column {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+	gap:3px;
+}
+
+.container{
+	display:flex;
+	gap:40px;
+}
+
+#paymentBox {
+  display: flex;
+  flex-direction: column;
+	border-top: 5px solid rgb(57,62,70);     
+	border-right: 1px solid rgb(211,211,211);  
+	border-bottom: 1px solid rgb(211,211,211);  
+	border-left: 1px solid rgb(211,211,211);    
+	padding: 15px;                            
+	background-color: rgb(255,255,255);         
+	border-radius: 5px;     
+	width:300px;
+	height:120px;
+}
+
+#price-row {
+	display:flex;
+	align-items:center;
+	gap:10px;
+	justify-content:space-between;
+}
+
+button #btnCheckAvailability{
+	color:rgb(255,255,255);
+	background-color:rgb(57,62,70);
+	border-radius:15px;
+	padding:10px 20px;
+	cursor: pointer;
+	border:none;
+}
+
+#expectationText {
+	width: 80vw;
+	text-align:justify;	
+	margin:0;
+}
+
+#descriptionText {
+	width: 60vw;
+	text-align:justify;	
+	margin:0;
+}
+
+.bookingSection {
+	color:rgb(0,0,0);
+	background-color:rgb(255,255,255);
+	border-radius:15px;
+	border: 2px solid #000000;
+	width:750px;
+	height:auto;
+	display:flex;
+	justify-content:left;
+	align-items:flex-start;
+	padding-top:35px;
+	padding-left:45px;
+	margin-bottom:100px;
+	font-size:15px;
+}
+
+.left {
+    flex: 1;
+    padding: 20px;
+  }
+
+  #participationBox{
+	color:rgb(0,0,0);
+	background-color:rgb(255,255,255);
+	border:none;
+	padding:20px;
+	border-radius:8px;
+	box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+	width:300px;
+	height:auto;
+}
+
+.participant-row {
+  display: flex;
+  align-items: center;  /* aligns text and buttons at same level */
+  justify-content: space-between; 
+  margin: 10px 0;
+}
+
+.optionBold{
+	font-size:17px;
+}
+
+#malaysian,#non-malaysian{
+	margin-top:7px
+}
+
+.ageDesc{
+	color:rgb(100,100,100);
+}
+
+.quantity-ctrl {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 10px;
+}
+
+.quantity-btn {
+  background: #0073e6;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  padding: 6px 12px;
+  cursor: pointer;
+  font-size: 16px;
+  display: inline-block;
+}
+
+.quantity-btn:hover {
+  background: #005bb5;
+}
+
+.quantity {
+  font-weight: bold;
+  min-width: 20px;
+  text-align: center;
+}
+
+#participationBoxForNonMalaysian{
+	color:rgb(0,0,0);
+	background-color:rgb(255,255,255);
+	border:none;
+	padding:20px;
+	border-radius:8px;
+	box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+	width:300px;
+	height:auto;
+}
+
+#participationBox, #participationBoxForNonMalaysian {
+  display: none;
+}
+
+#priceSummaryBox{
+	color:rgb(0,0,0);
+	background-color:rgb(255,255,255);
+	border:none;
+	border-radius:8px;
+	align-self:flex-start;
+}
+
+ .divider {
+    width: 1px;
+    background-color: #ccc;
+  }
+  
+
+
+
+  .right {
+    flex: 1;
+	padding:20px;
+	border-left: 2px solid #ddd;
+  }
+
+  
+#visitDate {
+  padding: 10px;
+  width:90%;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  margin-bottom: 15px;
+  margin-top:5px;
+}
+
+/* Radio Buttons */
+.radio-group {
+  display: flex;            /* put both options in one row */
+  gap: 40px;                /* space between them */
+  margin-top: 5px;
+}
+
+.radio-option {
+  display: flex;            /* keep radio + text aligned */
+  align-items: center;
+  font-weight: normal;
+}
+
+.radio-option input[type="radio"] {
+  margin-right: 6px;        /* space between circle and text */
+}
+
+#Box{
+	color:rgb(255,255,255);
+	background-color:rgb(57,62,70);
+	border-radius:15px;
+	border:none;
+	width:800px;
+	height:100px;
+	display:flex;
+	justify-content:center;
+	align-items:center;
+	font-weight:bold;
+	font-size:35px;
+}
+
+/* --- Responsive breakpoints --- */
+@media (max-width: 1024px) {
+  .image-row {
+    flex-direction: column;
+  }
+
+  .image-row img {
+    max-width: 100%;
+  }
+
+  iframe {
+    width: 100% !important;
+    height: 250px;
+  }
+}
+
+@media (max-width: 768px) {
+  .title-wishlist-wrapper {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  #paymentBox {
+    margin-top: 15px;
+  }
+
+  .bookingSection {
+    flex-direction: column;
+  }
+
+  .bookingSection .left,
+  .bookingSection .right {
+    width: 100%;
+  }
+
+  #priceSummaryBox {
+    padding: 15px;
+  }
+}
+
+@media (max-width: 480px) {
+  h1, h2 {
+    font-size: 1.4rem;
+  }
+
+  .quantity-ctrl button {
+    padding: 4px 8px;
+    font-size: 0.9rem;
+  }
+
+  #btnCheckAvailability,
+  button[type="button"] {
+    width: 100%;
+    margin-top: 10px;
+  }
+
+  
+}
+
+/* Modal background */
+.modal-gallery {
+  display: none;
+  position: fixed;
+  z-index: 1000;
+  padding-top: 40px;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: rgba(0,0,0,0.85);
+}
+
+/* Centered modal content */
+.modal-content-gallery {
+  position: relative;
+  margin: auto;
+  background: #fff;
+  padding: 10px;
+  border-radius: 10px;
+  max-width: 70%;    /* << smaller width */
+  max-height: 80%;   /* << smaller height */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* Slide images */
+.mySlides img {
+  max-width: 100%;
+  max-height: 60vh;  /* Prevent covering the whole page */
+  border-radius: 8px;
+}
+
+/* Close button */
+.close {
+  position: absolute;
+  top: 10px;
+  right: 25px;
+  color: #fff;
+  font-size: 35px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+/* Next/Prev arrows */
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  padding: 16px;
+  color: #fff;
+  font-weight: bold;
+  font-size: 20px;
+  user-select: none;
+  transition: 0.3s;
+}
+
+.prev { left: 0; }
+.next { right: 0; }
+
+.prev:hover, .next:hover {
+  background-color: rgba(0,0,0,0.6);
+  border-radius: 3px;
+}
+
+/* Caption */
+.caption-container {
+  margin-top: 10px;
+  text-align: center;
+  color: #333;
+}
+
+

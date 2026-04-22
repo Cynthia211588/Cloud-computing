@@ -1,0 +1,338 @@
+   
+        
+        body {
+            font-family: 'Segoe UI';
+            margin: 0;
+            padding: 0px;
+            background-color: rgb(241, 241, 241);
+            color: rgb(44, 36, 36);
+        }
+        
+        .container {
+            display: flex;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+        
+        /* search bar*/
+        .search-container {
+            position: relative;
+            width: 400px;
+            margin: 20px;
+        }
+
+        .search-box {
+            display: flex;
+            align-items: center;
+        }
+
+        .search-input-wrapper {
+            position: relative;
+            width: 100%;
+            display: flex;
+            align-items: center;
+        }
+
+        /* Search icon */
+        .search-box i.fa-search {
+            position: absolute;
+            left: 15px;
+            z-index: 2;
+            color: #888;
+            font-size: 18px;
+        }
+
+
+        .search-box input {
+            width: 100%;
+            height: 46px;
+            padding: 0 20px 0 45px;
+            border: 2px solid #d1e8ff;
+            border-radius: 8px;
+            font-size: 16px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+            transition: all 0.3s ease;
+            background-color: white;
+        }
+
+
+        .search-box input:hover {
+            opacity: 0.7;
+        }
+
+        .search-box input:focus {
+            outline: none;
+            border-color: #4a90e2;
+        }
+
+
+        .suggestions {
+            position: absolute;
+            top: 100%;
+            left: 0;
+            right: 0;
+            background: white;
+            border-radius: 0 0 8px 8px;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+            z-index: 1000;
+            max-height: 300px;
+            overflow-y: auto;
+            margin-top: 5px;
+            display: none;
+        }
+
+        .suggestion-item {
+            display: block;
+            padding: 15px 25px;
+            text-decoration: none;
+            color: #2d3e50;
+            font-size: 16px;
+            cursor: pointer;
+            text-align: left;
+        }
+
+
+        .suggestion-item:hover {
+            background-color: #f5f5f5;
+        }
+
+        .suggestion-item:last-child {
+            border-bottom: none;
+        }
+
+      
+
+        /* Filters Section */
+        .filters {
+            width: 250px;
+            padding-right: 20px;
+            margin-right: 20px;
+            border-right: 1px solid #ddd;
+        }
+        
+        .filter-section {
+            margin-bottom: 25px;
+        }
+        
+        .filter-title {
+            font-weight: bold;
+            margin-bottom: 10px;
+            font-size: 16px;
+        }
+        
+        .price-slider {
+            width: 100%;
+            accent-color: #0d6efd;
+        }
+        
+        .price-range {
+            display: flex;
+            justify-content: space-between;
+            margin-top: 5px;
+            font-size: 14px;
+        }
+        
+        .radio-group {
+            margin-top: 10px;
+        }
+        
+        .radio-option {
+            margin-bottom: 8px;
+        }
+        
+        .radio-option input {
+            margin-right: 8px;
+            accent-color: #0d6efd;
+        }
+
+      
+        .accessibility-filters {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(150px, 1fr)); /* Each box in a column, auto-fit */
+    gap: 10px; /* Space between boxes */
+    margin-top: 10px;
+}
+
+.access-box {
+    display: flex;             /* make text vertically centered */
+    align-items: center;
+    justify-content: center;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    gap: 5px;                /* space between icon and text*/
+    cursor: pointer;
+    text-align: center;
+    background-color: #f9f9f9;
+    transition: 0.2s;
+    font-weight: bold;
+    font-size: 0.9rem;
+    text-decoration: none;
+}
+
+.access-box:hover {
+    background-color: #e0e0e0;
+}
+
+.access-box.active {
+    border-color: #007bff;
+    background-color: #007bff;
+    color: #fff;
+}
+
+
+
+        /* Results Section */
+        .results {
+            flex: 1;
+        }
+        
+        .results-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 20px;
+        }
+        
+        .results-count {
+            font-size: 14px;
+            color: rgb(44, 36, 36);
+        }
+        
+        .sort-by {
+            font-size: 14px;
+        }
+        
+        .attractions-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+            gap: 20px;
+        }
+        
+        .attraction-card {
+            background: rgb(236, 234, 234);
+            border-radius: 8px;
+            overflow: hidden;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+            transition: transform 0.2s;
+        }
+
+        /* remove underline */
+        .attraction-card .card-link{
+            text-decoration: none;
+        }
+        
+        .attraction-card:hover {
+            transform: translateY(-5px);
+        }
+        
+        .card-image {
+            width: 100%;
+            height: 160px;
+            object-fit: cover;
+        }
+        
+        .card-content {
+            padding: 15px;
+        }
+        
+        .category {
+            font-size: 12px;
+            color: #666;
+            margin-bottom: 5px;
+        }
+        
+        .attraction-name {
+            font-weight: bold;
+            margin-bottom: 8px;
+            font-size: 16px;
+
+        }
+        
+        .confirmation, .book-now {
+            font-size: 12px;
+            color: #2e8b57;
+            margin-bottom: 8px;
+            font-weight: bold;
+        }
+        
+        .rating {
+            display: flex;
+            align-items: center;
+            margin-bottom: 8px;
+            font-size: 14px;
+        }
+        
+        .stars {
+            color: #ffc107;
+            margin-right: 5px;
+        }
+
+        .star-filter {
+            display: flex;
+            gap: 5px;
+            margin-top: 5px;
+            flex-wrap: wrap;
+        }
+
+        .star-box {
+            display: inline-block;
+            padding: 5px;
+            border: 1px solid #ccc;
+            width: 32px;
+            border-radius: 5px;
+            cursor: pointer;
+            text-align: center;
+            background-color: #f9f9f9;
+            transition: 0.2s;
+            font-weight: bold;
+            text-decoration: none;
+        }
+
+        .star-box:hover {
+            background-color: rgb(195, 195, 236);;
+            color: rgb(44, 36, 36);
+        }
+
+        .star-box.active {
+            background-color: #1976d2;
+            color: #f9f9f9;
+        }
+
+        
+        .price {
+            font-weight: bold;
+            font-size: 16px;
+        }
+        
+        .original-price {
+            color: #999;
+            font-size: 14px;
+            margin-left: 5px;
+        }
+        
+        .discount-badge {
+            background-color: #f8e1e1;
+            color: #d32f2f;
+            padding: 3px 6px;
+            border-radius: 4px;
+            font-size: 12px;
+            font-weight: bold;
+            margin-left: 8px;
+        }
+        
+        .recommendation-level {
+            display: inline-block;
+            padding: 2px 8px;
+            background-color: #e3f2fd;
+            color: #1976d2;
+            border-radius: 4px;
+            font-size: 12px;
+            margin-top: 8px;
+        }
+        
+        .hidden {
+            display: none;
+        }
+
+        

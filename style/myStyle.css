@@ -1,0 +1,516 @@
+
+
+body {
+  font-family: 'Segoe UI', sans-serif;
+  background-color: #f8f9fa;
+  margin: 0;
+  padding: 0;
+  color: rgb(0,0,0);
+}
+
+
+
+/* Subscribe section */
+.subscribe-section {
+  margin-bottom: 30px;
+}
+.subscribe-section i {
+  font-size: 2rem;
+  color: #f9a825;
+  margin-bottom: 10px;
+  display: block;
+}
+.subscribe-section h2 {
+  font-size: 1.5rem;
+  margin: 10px 0;
+}
+.subscribe-section p {
+  margin-bottom: 20px;
+  color: #ccc;
+}
+.subscribe-section form {
+  display: flex;
+  justify-content: center; /* 输入框和按钮居中 */
+  gap: 10px;
+  flex-wrap: wrap;
+}
+.subscribe-section input {
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+  flex: 1 1 250px;
+  max-width: 300px;
+}
+.subscribe-section button {
+  padding: 10px 20px;
+  background: #f9a825;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  color: #222;
+  font-weight: bold;
+  transition: 0.3s;
+}
+.subscribe-section button:hover {
+  background: #ffca28;
+}
+
+/* Social icons */
+.social-section {
+  margin: 25px 0;
+}
+.social-section a {
+  color: #fff;
+  margin: 0 10px;
+  font-size: 1.4rem;
+  transition: color 0.3s;
+}
+.social-section a:hover {
+  color: #f9a825;
+}
+
+
+img {
+  border-radius: 15px;
+}
+
+.searchBar{
+	width: 400px;          
+	font-family: 'Poppins', sans-serif;
+}
+
+.searchBar input{
+	flex: 1;                       
+	padding: 8px 10px;
+	border: 1px solid black;     
+	border-radius: 20px; 
+	outline: none;
+	background-color:rgb(234,234,234);
+}
+
+
+button{
+	color:rgb(255,255,255);
+	background-color:rgb(57,62,70);
+	border-radius:15px;
+	padding:10px 20px;
+	cursor: pointer;
+	border:none;
+ }
+ 
+summary {
+  cursor: pointer; /* Indicates interactivity */
+  font-weight: bold; /* Makes the summary text stand out */
+  padding: 8px 12px; /* Adds space around the text */
+  background-color: #f0f0f0; /* Sets a background color */
+  border: 1px solid #ccc; /* Adds a border */
+  border-radius: 4px; /* Rounds the corners */
+}
+
+summary:hover {
+  background-color: #e0e0e0; /* Changes background on hover */
+}
+
+hr {
+    width: 100%;
+}
+
+.vertical {
+	border: none;
+	border-left: 1px solid black;
+	height:100%;
+	width:0;
+	display:inline-block;
+}
+
+.container2{
+	display:flex;
+	gap:200px;
+}
+
+.progress-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: 30px auto;
+  width: 80%;
+  max-width: 800px;
+  font-family: Arial, sans-serif;
+}
+
+.step {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  flex: 1;
+  position: relative;
+}
+
+.circle {
+  width: 28px;
+  height: 28px;
+  border-radius: 50%;
+  border: 2px solid #ccc;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #fff;
+  font-size: 14px;
+  font-weight: bold;
+}
+
+.step span {
+  margin-top: 8px;
+  font-weight: bold;
+  color: #555;
+}
+
+/* line between steps */
+.line {
+  height: 3px;
+  flex: 1;
+  background: #ccc;
+  margin: 0 10px;
+}
+
+/* completed step */
+.step.completed .circle {
+  background: #0f9d58;
+  border-color: #0f9d58;
+  color: #fff;
+}
+
+.line.completed {
+  background: #0f9d58;
+}
+
+/* active step */
+.step.active .circle {
+  background: rgb(0, 0, 0);
+  border-color: rgb(0, 0, 0);
+  color: #fff;
+}
+
+.container {
+  display: flex;      /* Places children side by side */
+  gap: 10px;          /* Space between boxes */
+}
+
+#infoBox {
+  flex: 2;            /* Takes twice the space of orderSummaryBox */
+  padding: 20px;
+  text-align: left;
+  margin: 50px auto; 
+  margin-left:100px;                     /* spacing inside */
+}
+
+#infoBox h2 {
+ text-align: left;
+ margin-bottom: 20px;   
+ padding-left:100px;
+}
+
+#infoBox label {
+  display: block;
+  margin-bottom: 5px;
+  font-weight: bold;
+  padding-left:100px;
+}
+
+#infoBox input {
+  width: 80%;
+  padding: 8px;
+  margin-left:100px;
+  margin-right:350px;
+  margin-bottom: 15px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+#infoBox button {
+  width: 82%;
+  margin-left:100px;
+  padding: 10px;
+  background: #007bff;
+  border: none;
+  border-radius: 5px;
+  color: white;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+#infoBox button:hover {
+  background: #0056b3;
+}
+
+select {
+  width: 82%;              
+  padding: 10px;            
+  border: 1px solid #ccc;   
+  border-radius: 5px;       
+  background-color: #fff;   
+  font-size: 16px;          
+  cursor: pointer;   
+  margin-left:100px;
+  margin-bottom: 15px;       
+}
+
+select:focus {
+  border-color: #007bff;    /* highlight when active */
+  outline: none;            /* remove default outline */
+  box-shadow: 0 0 5px rgba(0,123,255,0.5); /* glow */
+}
+
+option {
+  padding: 10px;
+}
+
+
+small  {
+    font-size: 0.8em;
+    color: #555;
+    text-align:left;
+    display: block;     /* make it block-level */
+    text-align: left;   /* now left alignment works */
+    margin-top: 5px;    /* optional spacing */
+    margin-left:100px;
+    margin-right:50px;
+}
+
+#orderSummaryBox {
+  margin-top:60px;
+  flex: 1;
+  text-align: left;
+  margin-right:100px;
+}
+
+#orderSummaryBox #summaryCard {
+  background: #fff;
+  border: 2px solid #e0e0e0;
+  border-radius: 8px;
+  margin-right: 50px;
+  margin-left: none;
+  padding: 20px;
+  padding-top:20px;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+}
+
+#orderSummaryBox #summaryCardHeader {
+  display: flex;
+  padding: 15px;
+  border-bottom: 1px solid #eee;
+}
+
+#orderSummaryBox #summaryCardHeader img {
+  width: 80px;
+  height: 60px;
+  border-radius: 6px;
+  margin-right: 12px;
+  object-fit: cover;
+}
+
+#orderSummaryBox #summaryCardBody {
+  padding: 15px;
+  font-size: 14px;
+  color: #333;
+}
+
+#orderSummaryBox #summaryCardFooter {
+  border-top: 1px solid #eee;
+  padding: 15px;
+  font-size: 13px;
+}
+
+#orderSummaryBox #summaryCardFooter small{
+    font-size: 0.8em;
+    color: #555;
+    text-align:left;   
+    text-align: left;   /* now left alignment works */
+    margin-top: 5px;    /* optional spacing */
+    margin-left:100px;
+    margin-right:50px;
+}
+
+.terms {
+  font-size: 0.8rem;
+  text-align: center;
+  margin-top: 1.5rem;
+}
+
+.terms a {
+  color: #007bff;
+  text-decoration: none;
+}
+
+.terms a:hover {
+  text-decoration: underline;
+}
+
+
+.payment-container button {
+  width: 84%;
+  margin-top: 50px;
+  background: #007bff;
+  border: none;
+  border-radius: 5px;
+  color: white;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.payment-container button:hover {
+  background: #0056b3;
+}
+
+.payment-container {
+  flex: 2;            /* Takes twice the space of orderSummaryBox */
+  padding-left: 100px;
+  text-align: left;
+  margin: 50px auto;
+  margin-left:100px;
+  font-family: Arial, sans-serif;
+}
+
+.payment-container h3 {
+  margin-bottom: 5px;
+}
+
+.secure-text {
+  color: #28a745;
+  font-size: 14px;
+  margin-bottom: 15px;
+}
+
+.payment-option {
+  display: block;
+  margin-bottom: 10px;
+  cursor: pointer;
+}
+
+.payment-option input {
+  display: none;
+}
+
+.option-box {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border: 1px solid #dcdcdc;
+  border-radius: 6px;
+  padding: 10px 15px;
+  transition: border-color 0.3s;
+  width:80%
+}
+
+.payment-option input:checked + .option-box {
+  border: 2px solid #0056d2;
+  background: #f0f7ff;
+}
+
+.option-box img {
+  height: 20px;
+}
+
+.card-option {
+  font-weight: normal;
+}
+
+.card-form,
+.googlepay-info {
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.4s ease, padding 0.3s ease;
+  border: 1px solid #dcdcdc;
+  border-radius: 6px;
+  margin-top: 10px;
+  width: 80%;
+  padding: 0 15px; /* collapsed = no vertical padding */
+}
+
+.card-form.active,
+.googlepay-info.active {
+  max-height: 500px; /* big enough to fit the content */
+  padding: 15px;
+}
+
+
+.card-form label {
+  font-size: 14px;
+  margin-top: 10px;
+  display: block;
+  margin-left: 20px;
+}
+
+.card-form input {
+  width: 90%;
+  padding: 10px;
+  margin-left: 20px;
+  margin-right: 10px;
+  margin-top: 5px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  font-size: 14px;
+}
+
+.card-form .row {
+  display: flex;
+  gap: 10px;
+  margin-right: 35px;
+}
+
+.card-form .row div {
+  flex: 1;
+}
+
+.success-container {
+      background: #fff;
+      padding: 30px 40px;
+      border-radius: 10px;
+      text-align: center;
+      box-shadow: 0px 4px 10px rgba(0,0,0,0.1);
+      max-width: 80%;
+      margin: 100px auto;
+    }
+    .success-container h1 {
+      color: #28a745;
+      margin-bottom: 10px;
+    }
+    .success-container p {
+      color: #333;
+      margin: 5px 0;
+    }
+
+    .success-container #summaryCard #summaryCardHeader img {
+      border: 1px solid #e0e0e0;
+      border-radius: 8px;
+      padding: 20px;
+      margin-top: 20px;
+      width:400px;
+      height:320px;
+    }
+
+    .btn-home {
+      background: #0056d2;
+      margin-top:20px;
+      color: #fff;
+      border: none;
+      padding: 12px 20px;
+      border-radius: 6px;
+      cursor: pointer;
+      font-size: 14px;
+      transition: background 0.3s;
+    }
+    .btn-home:hover {
+      background: #003f9e;
+    }
+
+
+
+
+
+
+
+
+

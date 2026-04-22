@@ -1,0 +1,263 @@
+ body {
+            font-family: 'Segoe UI', Arial, sans-serif;
+            margin: 0;
+            padding: 40px;
+            color: #333;
+            line-height: 1.6;
+            background-color: #f8f9fa;
+        }
+        
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            background: white;
+            padding: 25px;
+            border-radius: 10px;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+        }
+        
+        /* Header Section */
+        .tagline {
+            font-size: 18px;
+            color: #555;
+            margin-bottom: 20px;
+            line-height: 1.4;
+        }
+        
+        .meta-container {
+            display: flex;
+            align-items: center;
+            flex-wrap: wrap;
+            gap: 15px;
+            margin-bottom: 25px;
+        }
+        
+        .rating {
+            display: flex;
+            align-items: center;
+            font-weight: 600;
+            color:  #666;
+        }
+        
+        .star{
+            color: #FFD700;
+        }
+
+        .reviews, .bookings {
+            font-size: 14px;
+            color: #666;
+        }
+        
+        .location {
+            display: flex;
+            align-items: center;
+            font-size: 14px;
+            color: #666;
+        }
+        
+        .location-icon {
+            margin-right: 5px;
+            color: #06c;
+        }
+        
+        .wishlist-btn {
+            background: none;
+            border: 1px solid #06c;
+            color: #06c;
+            padding: 8px 15px;
+            border-radius: 4px;
+            font-size: 14px;
+            cursor: pointer;
+            transition: all 0.3s;
+            margin-left: auto;
+            margin-bottom: 30px;
+        }
+        
+        .wishlist-btn:hover {
+            background: #06c;
+            color: white;
+        }
+        
+        /* Gallery Section */
+      
+        .gallery-container{
+            margin-top: 20px;
+
+        }
+        
+        .gallery-grid {
+            display:flex;
+            align-items: flex-start;
+            gap: 10px;
+        }
+        
+        .gallery-grid img {
+            /* padding: 8px 15px; */
+            width: 100%;
+            height: 120px;
+            object-fit: cover;
+        }
+        
+       #gallery-main {
+            width: 60%;
+            height: 300px;
+            object-fit: cover;
+            border-radius: 4px;
+        }
+
+        .secondary-images {
+            width: 40%;                 /* Smaller column for secondary images */
+            display: flex;
+            flex-direction: column;     /* Stack vertically */
+            gap: 10px;                  /* Space between secondary images */
+        }
+
+
+        #gallery-secondary-1, 
+        #gallery-secondary-2 {
+            width: 100%;
+            height: 145px;
+            object-fit: cover;
+            flex-direction: column;
+            gap: 10px;
+            border-radius: 4px;
+        }
+
+      
+        /* Booking Section */
+        .booking-section {
+            background: #f8f9fa;
+            padding: 25px;
+            border-radius: 8px;
+            margin-top: 30px;
+        }
+        
+        .booking-title {
+            margin-top: 0;
+            margin-bottom: 20px;
+            font-size: 20px;
+            color: #333;
+        }
+        
+        .form-group {
+            margin-bottom: 20px;
+        }
+        
+        .form-group label {
+            display: block;
+            margin-bottom: 8px;
+            font-weight: 500;
+            color: #555;
+        }
+        
+        .form-group input, 
+        .form-group select {
+            width: 100%;
+            padding: 10px;
+            border: 1px solid #ddd;
+            border-radius: 4px;
+            font-size: 16px;
+            box-sizing: border-box;
+        }
+        
+        .book-button {
+            background-color: #06c;
+            color: white;
+            border: none;
+            padding: 12px 20px;
+            font-size: 16px;
+            border-radius: 4px;
+            cursor: pointer;
+            width: 100%;
+            transition: background-color 0.3s;
+        }
+        
+        .book-button:hover {
+            background-color: #005bb5;
+        }
+
+        /*Ticket selector*/
+        .ticket-selector {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            border: 1px solid #ddd;
+            border-radius: 4px;
+            padding: 8px 15px;
+            background: white;
+        }
+
+        .price-display {
+            font-size: 20px;
+            font-weight: bold;
+            color: #333;
+        }
+
+        .quantity-ctrl {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+
+        /* .quantity-btn {
+            width: 30px;
+            height: 30px;
+            border: 1px solid #06c;
+            background: white;
+            color: #06c;
+            border-radius: 4px;
+            font-size: 16px;
+            cursor: pointer;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        } */
+
+
+        /*Passport holder selection*/
+.passport-options {
+    margin-top: 10px;
+}
+
+.passport-option-row {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    gap: 10px;
+}
+
+.passport-option {
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 10px;
+    flex: 1;
+    cursor: pointer;
+    text-align: center;
+}
+
+.passport-option.selected {
+    border-color: #0066cc;
+    background-color: #f0f7ff;
+}
+
+.passport-main {
+    font-weight: bold;
+    margin-bottom: 2px;
+}
+
+.passport-sub {
+    font-size: 0.9em;
+    color: #555;
+}
+
+.passport-option-row:hover {
+    background-color: #06c;
+}
+        
+.passport-option.selected {
+    background-color: #06c;
+    color: white;
+    border-color: #06c;
+} 
+
+

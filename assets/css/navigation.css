@@ -1,0 +1,113 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 20px;
+}
+
+.container {
+    max-width: 1200px;
+    margin: auto;
+}
+
+.section-header {
+    text-align: center;
+    margin: 50px 0 40px;
+}
+
+.section-header h2 {
+    font-family: 'Helvetica Neue', Arial, sans-serif;
+    font-size: 2.2em;
+    font-weight: 300;
+    color: #444;
+    position: relative;
+    padding-bottom: 10px;
+}
+.section-header h2::after {
+    content: '';
+    display: block;
+    width: 60px;
+    height: 3px;
+    background-color: #ffc107;
+    margin: 10px auto 0;
+}
+.section-header p {
+    color: #666;
+    font-style: italic;
+}
+
+/* State wrapper */
+.state-wrapper {
+    position: relative;
+    display: flex;
+    align-items: center;
+    overflow: hidden;
+    padding: 0 50px;
+}
+
+#stateList {
+    display: flex;
+    overflow-x: scroll;
+    scroll-behavior: smooth;
+    -webkit-overflow-scrolling: touch;
+    gap: 20px;
+    padding-bottom: 20px;
+}
+#stateList::-webkit-scrollbar { display: none; }
+#stateList { -ms-overflow-style: none; scrollbar-width: none; }
+
+/* State card */
+.state-card {
+    min-width: 270px;
+    height: 180px;
+    border-radius: 10px;
+    overflow: hidden;
+    position: relative;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    text-decoration: none;
+    color: white;
+}
+.state-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 10px 20px rgba(0,0,0,0.2);
+}
+.state-card img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+    transition: transform 0.3s ease;
+}
+.state-card:hover img { transform: scale(1.05); }
+
+/* Overlay */
+.state-overlay {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background: linear-gradient(to top, rgba(0,0,0,0.7), rgba(0,0,0,0));
+    padding: 20px;
+    box-sizing: border-box;
+}
+.state-overlay h6 { margin: 0; font-size: 1.5em; font-weight: bold; }
+.state-overlay p { margin: 5px 0 0; font-size: 0.9em; }
+
+/* Nav buttons - only arrows, no background */
+.nav-btn {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background: none;
+    color: black;
+    border: none;
+    font-size: 2.5em;
+    cursor: pointer;
+    z-index: 999;
+    padding: 0 10px;
+    line-height: 1;
+}
+.nav-btn:hover { color: #ffc107; }
+.nav-btn.left { left: 0; }
+.nav-btn.right { right: 0; }

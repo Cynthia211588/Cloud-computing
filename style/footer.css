@@ -1,0 +1,101 @@
+.footer {
+  background-color: #222 !important;
+  color: #fff !important;
+  text-align: center;
+  padding: 50px 0;
+}
+
+.footer a {
+  color: #ffc107;
+  text-decoration: none;
+}
+
+.footer a:hover {
+  text-decoration: underline;
+}
+
+.footer-container {
+  max-width: 1000px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+/* Subscribe section */
+.subscribe-section {
+  margin-bottom: 30px;
+}
+.subscribe-section i {
+  font-size: 2rem;
+  color: #f9a825;
+  margin-bottom: 10px;
+  display: block;
+}
+.subscribe-section h2 {
+  font-size: 1.5rem;
+  margin: 10px 0;
+}
+.subscribe-section p {
+  margin-bottom: 20px;
+  color: #ccc;
+}
+.subscribe-section form {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  flex-wrap: wrap;
+}
+.subscribe-section input {
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+  flex: 1 1 250px;
+  max-width: 300px;
+}
+.subscribe-section button {
+  padding: 10px 20px;
+  background: #f9a825;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  color: #222;
+  font-weight: bold;
+  transition: 0.3s;
+}
+.subscribe-section button:hover {
+  background: #ffca28;
+}
+
+/* Social icons */
+.social-section {
+  margin: 25px 0;
+}
+.social-section a {
+  color: #fff;
+  margin: 0 10px;
+  font-size: 1.4rem;
+  transition: color 0.3s;
+}
+.social-section a:hover {
+  color: #f9a825;
+}
+
+/* Footer nav */
+.footer-nav {
+  margin: 15px 0;
+}
+.footer-nav a {
+  color: white;
+  margin: 0 15px;
+  text-decoration: none;
+  transition: color 0.3s;
+}
+.footer-nav a:hover {
+  color: #f9a825;
+}
+
+/* Bottom */
+.footer-bottom {
+  margin-top: 15px;
+  font-size: 0.9rem;
+  color: #aaa;
+}

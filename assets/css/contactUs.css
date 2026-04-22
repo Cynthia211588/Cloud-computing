@@ -1,0 +1,33 @@
+/* Error message styling */
+.text-danger {
+  font-size: 0.9rem;
+  margin-top: 4px;
+  display: block;
+}
+
+/* (*）*/
+.form-label .text-danger {
+  color: red;
+  display: inline;   /*keep * inline with label text*/
+  margin-left: 2px;  
+  font-size: inherit; 
+}
+
+/* Success button feedback */
+.btn-success {
+  background-color: #28a745 ;
+  border-color: #28a745 ;
+}
+
+/* For checkbox labels */
+.form-check-label .text-danger {
+  color: red ;
+  display: inline;
+  margin-left: 4px; 
+  font-size: inherit;
+}
+
+/* #formAlert .alert {
+  margin-bottom: 0.75rem;
+}
+ */
