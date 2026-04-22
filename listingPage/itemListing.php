@@ -1,14 +1,6 @@
 <?php
-$servername = "localhost";
-$username = "root";
-$password = "";
-$database = "exploremy_db";
 
-
-// Connect to database
-$conn = mysqli_connect($servername, $username, $password, $database);
-if (!$conn) { 
-    die("Connection failed: " . mysqli_connect_error()); }
+require_once '../db_connection.php';
 
 // Get state from URL, default Kuala Lumpur
 $stateName = isset($_GET['state']) ? $_GET['state'] : 'Kuala Lumpur';

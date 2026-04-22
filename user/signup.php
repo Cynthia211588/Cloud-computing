@@ -6,21 +6,9 @@ $message = "";
 
 // Process form if submitted
 if ($_SERVER['REQUEST_METHOD'] === 'POST') {
-    // Database configuration
-    $servername = "localhost";
-    $username = "root";
-    $password = "";
-    $dbname = "ExploreMY_db";
-    $port = 3306;
 
-    // Create connection
-    $conn = new mysqli($servername, $username, $password, $dbname, $port);
+    require_once '../db_connection.php';
 
-    // Check connection
-    if ($conn->connect_error) {
-        die("Connection failed: " . $conn->connect_error);
-    }
-    
     // Get form data
     $firstName = $_POST['firstName'];
     $lastName = $_POST['lastName'];

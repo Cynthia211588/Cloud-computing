@@ -1,13 +1,6 @@
 <?php
-$servername = "localhost";
-$username = "root";   
-$password = "";      
-$dbname = "ExploreMY_db";
 
-$conn = new mysqli($servername, $username, $password, $dbname);
-if ($conn->connect_error) {
-    die("DB Connection failed: " . $conn->connect_error);
-}
+require_once '../db_connection.php';
 
 $sql = "SELECT * FROM states ORDER BY name ASC";
 $result = $conn->query($sql);
