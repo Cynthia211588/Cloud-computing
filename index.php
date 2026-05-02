@@ -24,7 +24,7 @@ require_once 'db_connection.php';
 <?php include('includes/navigation.php'); ?>
 
 <!-- Hero Section -->
-<section class="hero d-flex align-items-center justify-content-center text-center">
+<section class="hero d-flex align-items-center justify-content-center text-center" style="background-image: url('https://travel-itinerary-malcolm.s3.ap-southeast-1.amazonaws.com/assets/homeImages/hero-travel.jpg');">
   <div>
     <h1>ExploreMy.</h1>
     <p>Find your perfect trip with us</p>
@@ -165,6 +165,9 @@ require_once 'db_connection.php';
         "https://travel-itinerary-malcolm.s3.ap-southeast-1.amazonaws.com/assets/homeImages/hero-4.jpg"
       ];
       let heroIndex = 0;
+
+      hero.style.backgroundImage = `url('${heroImages[heroIndex]}')`;
+
       setInterval(() => {
         heroIndex = (heroIndex + 1) % heroImages.length;
         hero.style.backgroundImage = `url('${heroImages[heroIndex]}')`;
