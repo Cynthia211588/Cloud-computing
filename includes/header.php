@@ -6,8 +6,8 @@ if (session_status() === PHP_SESSION_NONE) {
 <header class="site-header">
     <div class="container header-container">
         <div class="logo">
-            <a href="/WAD-assignment/Web Application Development Assignment/index.php" class="logo-link">
-                <img src="/WAD-assignment/Web Application Development Assignment/assets/logo/light-mode-logo.png" alt="Logo" class="logo-img">
+            <a href="/index.php" class="logo-link">
+                <img src="/assets/logo/light-mode-logo.png" alt="Logo" class="logo-img">
                 <span class="logo-explore">Explore</span><span class="logo-my">My.</span>
             </a>
         </div>
@@ -18,27 +18,27 @@ if (session_status() === PHP_SESSION_NONE) {
 
         <nav class="main-nav" id="main-nav">
             <ul class="nav-list">
-                <li><a href="/WAD-assignment/Web Application Development Assignment/index.php" class="active">Home</a></li>
-                <li><a href="/WAD-assignment/Web Application Development Assignment/about.php">About Us</a></li>
+                <li><a href="/index.php" class="active">Home</a></li>
+                <li><a href="/about.php">About Us</a></li>
 				<li class="has-dropdown">
                     <a href="#">Attraction <i class="fa fa-angle-down"></i></a>
                         <ul class="dropdown">
 
-                            <li><a href="/WAD-assignment/Web Application Development Assignment/listingPage/itemListing.php?state=Kuala%20Lumpur">Kuala Lumpur</a></li>
-                            <li><a href="/WAD-assignment/Web Application Development Assignment/listingPage/itemListing.php?state=Johor">Johor</a></li>
-                            <li><a href="/WAD-assignment/Web Application Development Assignment/listingPage/itemListing.php?state=Kedah">Kedah</a></li>
-                            <li><a href="/WAD-assignment/Web Application Development Assignment/listingPage/itemListing.php?state=Pahang">Pahang</a></li>
-                            <li><a href="/WAD-assignment/Web Application Development Assignment/listingPage/itemListing.php?state=Penang">Penang</a></li>
-                            <li><a href="/WAD-assignment/Web Application Development Assignment/listingPage/itemListing.php?state=Perak">Perak</a></li>
-                            <li><a href="/WAD-assignment/Web Application Development Assignment/listingPage/itemListing.php?state=Sabah">Sabah</a></li>
-                            <li><a href="/WAD-assignment/Web Application Development Assignment/listingPage/itemListing.php?state=Sarawak">Sarawak</a></li>
+                            <li><a href="/listingPage/itemListing.php?state=Kuala%20Lumpur">Kuala Lumpur</a></li>
+                            <li><a href="/listingPage/itemListing.php?state=Johor">Johor</a></li>
+                            <li><a href="/listingPage/itemListing.php?state=Kedah">Kedah</a></li>
+                            <li><a href="/listingPage/itemListing.php?state=Pahang">Pahang</a></li>
+                            <li><a href="/listingPage/itemListing.php?state=Penang">Penang</a></li>
+                            <li><a href="/listingPage/itemListing.php?state=Perak">Perak</a></li>
+                            <li><a href="/listingPage/itemListing.php?state=Sabah">Sabah</a></li>
+                            <li><a href="/listingPage/itemListing.php?state=Sarawak">Sarawak</a></li>
                         </ul>
                 </li>
                 <li class="has-dropdown">
                     <a href="#">Help <i class="fa fa-angle-down"></i></a>
                     <ul class="dropdown">
-                        <li><a href="/WAD-assignment/Web Application Development Assignment/contactUs.php">Contact Us</a></li>
-                        <li><a href="/WAD-assignment/Web Application Development Assignment/faq.php">FAQ</a></li>
+                        <li><a href="/contactUs.php">Contact Us</a></li>
+                        <li><a href="/faq.php">FAQ</a></li>
                     </ul>
                 </li>
             </ul>
@@ -52,17 +52,17 @@ if (session_status() === PHP_SESSION_NONE) {
                         <span class="user-name">Hi, <?php echo htmlspecialchars($_SESSION['first_name'] ?? ''); ?></span>
                     </button>
                     <ul class="dropdown-menu">
-                        <li><a class="dropdown-item" href="/WAD-assignment/Web Application Development Assignment/account.php"><i class="fa fa-user"></i> Edit Profile</a></li>
-                        <li><a class="dropdown-item" href="/WAD-assignment/Web Application Development Assignment/wishlist.php"><i class="fa fa-heart"></i> Wishlist</a></li>
-                        <li><a class="dropdown-item" href="/WAD-assignment/Web Application Development Assignment/payment_history.php"><i class="fa fa-history"></i> Purchase History</a></li>
+                        <li><a class="dropdown-item" href="/account.php"><i class="fa fa-user"></i> Edit Profile</a></li>
+                        <li><a class="dropdown-item" href="/wishlist.php"><i class="fa fa-heart"></i> Wishlist</a></li>
+                        <li><a class="dropdown-item" href="/payment_history.php"><i class="fa fa-history"></i> Purchase History</a></li>
                         <li><hr class="dropdown-divider"></li>
-                        <li><a class="dropdown-item" href="/WAD-assignment/Web Application Development Assignment/logout.php"><i class="fa fa-sign-out-alt"></i> Log Out</a></li>
+                        <li><a class="dropdown-item" href="/logout.php"><i class="fa fa-sign-out-alt"></i> Log Out</a></li>
                     </ul>
                 </div>
             <?php else: ?>
                 <div class="auth-buttons">
-                    <a href="/WAD-assignment/Web Application Development Assignment/user/login.php" class="btn-auth signin">Login</a>
-                    <a href="/WAD-assignment/Web Application Development Assignment/user/signup.php" class="btn-auth signup">Register</a>
+                    <a href="/user/login.php" class="btn-auth signin">Login</a>
+                    <a href="/user/signup.php" class="btn-auth signup">Register</a>
                 </div>
             <?php endif; ?>
         </div>

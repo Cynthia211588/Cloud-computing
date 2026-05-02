@@ -30,7 +30,7 @@ require_once 'db_connection.php';
 
     <!-- Search Box -->
     <div class="search-box mt-4">
-      <form id="stateForm" class="row g-2" method="get" action="/Wad-Assignment/Web%20Application%20Development%20Assignment/listingPage/itemListing.php">
+      <form id="stateForm" class="row g-2" method="get" action="/listingPage/itemListing.php">
         <div class="col-md-9 position-relative">
           <input type="text" id="stateSearch" name="state" class="form-control" placeholder="Search by state...">
           <div class="suggestions" id="stateSuggestions"></div>
@@ -159,10 +159,10 @@ require_once 'db_connection.php';
     const hero = document.querySelector(".hero");
     if (hero) {
       const heroImages = [
-        "/WAD-ASSIGNMENT/Web Application Development Assignment/assets/homeImages/hero-travel.jpg",
-        "/WAD-ASSIGNMENT/Web Application Development Assignment/assets/homeImages/hero-2.jpg",
-        "/WAD-ASSIGNMENT/Web Application Development Assignment/assets/homeImages/hero-3.jpg",
-        "/WAD-ASSIGNMENT/Web Application Development Assignment/assets/homeImages/hero-4.jpg"
+        "/assets/homeImages/hero-travel.jpg",
+        "/assets/homeImages/hero-2.jpg",
+        "/assets/homeImages/hero-3.jpg",
+        "/assets/homeImages/hero-4.jpg"
       ];
       let heroIndex = 0;
       setInterval(() => {

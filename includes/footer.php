@@ -22,9 +22,9 @@
 
     <!-- Nav -->
     <div class="footer-nav">
-      <a href="/WAD-assignment/Web Application Development Assignment/index.php">Home</a>
-      <a href="/WAD-assignment/Web Application Development Assignment/about.php">About</a>
-      <a href="/WAD-assignment/Web Application Development Assignment/contactUs.php">Contact</a>
+      <a href="/index.php">Home</a>
+      <a href="/about.php">About</a>
+      <a href="/contactUs.php">Contact</a>
     </div>
 
     <div class="footer-bottom">
