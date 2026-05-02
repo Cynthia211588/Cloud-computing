@@ -1,9 +1,9 @@
 <?php
 
     $servername = getenv('DB_HOST') ?: "localhost";
-    $username = getenv('DB_USER') ?: "root";
-    $password = getenv('DB_PASS') ?: "";
-    $dbname = getenv('DB_NAME') ?: "exploremy_db";
+    $username = getenv('DB_USERNAME') ?: "root";
+    $password = getenv('DB_PASSWORD') ?: "";
+    $dbname = getenv('DB_DATABASE') ?: "exploremy_db";
     $port = getenv('DB_PORT') ?: 3306;
 
     $conn = new mysqli($servername, $username, $password, $dbname, $port);
