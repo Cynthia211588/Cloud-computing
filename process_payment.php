@@ -1,7 +1,7 @@
 
 <?php
 session_start();
-include 'includes/database_conn.php';
+require_once 'db_connection.php';
 
 // Ensure user is logged in
 if (!isset($_SESSION['user_id'])) {
@@ -31,7 +31,7 @@ if ($visitDate) {
 }
 
 // Insert into Payment_History
-$stmt = $conn->prepare("INSERT INTO Payment_History 
+$stmt = $conn->prepare("INSERT INTO payment_history 
 (user_id, email, purchasedItem_id, purchasedItem_name, visit_date, adult_count, youth_count, child_count, foreign_count, image, total_amount, payment_method) 
 VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)");
 

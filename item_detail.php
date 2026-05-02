@@ -1,7 +1,7 @@
 <?php 
 session_start();
 
-include 'includes/database_conn.php';
+require_once 'db_connection.php';
 include 'includes/wishlist_logic.php';
 
 if (isset($_GET['id'])) {

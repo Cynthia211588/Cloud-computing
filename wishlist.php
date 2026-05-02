@@ -7,8 +7,7 @@ if (!isset($_SESSION['user_id'])) {
 }
 
 
-include 'includes/database_conn.php';
-
+require_once 'db_connection.php';
 
 
 $wishlist_items = []; 

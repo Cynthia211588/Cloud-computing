@@ -21,6 +21,7 @@ require_once 'db_connection.php';
 <body>
 
 <?php include('includes/header.php'); ?>
+<?php include('includes/navigation.php'); ?>
 
 <!-- Hero Section -->
 <section class="hero d-flex align-items-center justify-content-center text-center">
@@ -44,7 +45,6 @@ require_once 'db_connection.php';
   </div>
 </section>
 
-<?php include('includes/navigation.php'); ?>
 
 
 <!-- ===================== Popular Destinations ===================== -->
@@ -159,10 +159,10 @@ require_once 'db_connection.php';
     const hero = document.querySelector(".hero");
     if (hero) {
       const heroImages = [
-        "/assets/homeImages/hero-travel.jpg",
-        "/assets/homeImages/hero-2.jpg",
-        "/assets/homeImages/hero-3.jpg",
-        "/assets/homeImages/hero-4.jpg"
+        "assets/homeImages/hero-travel.jpg",
+        "assets/homeImages/hero-2.jpg",
+        "assets/homeImages/hero-3.jpg",
+        "assets/homeImages/hero-4.jpg"
       ];
       let heroIndex = 0;
       setInterval(() => {

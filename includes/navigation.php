@@ -1,7 +1,5 @@
 <?php
 
-require_once '../db_connection.php';
-
 $sql = "SELECT * FROM states ORDER BY name ASC";
 $result = $conn->query($sql);
 ?>

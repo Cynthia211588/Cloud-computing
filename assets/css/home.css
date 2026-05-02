@@ -6,7 +6,7 @@ body {
 
 /* ===== Hero Section ===== */
 .hero {
-  background: url('/assets/homeImages/hero-travel.jpg')
+  background: url('../homeImages/hero-travel.jpg')
               center center/cover no-repeat;
   height: 80vh;
   color: white;

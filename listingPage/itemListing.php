@@ -143,8 +143,8 @@ $attractionsResult = mysqli_query($conn, $sql);
                      data-access="<?php echo $row['accessibility'];?>"
                      data-type="<?php echo $row['type']; ?>"
                      data-location="<?php echo htmlspecialchars($stateName); ?>">
-                    <a href="../item_detail?id=<?php echo $row['id']; ?>" target="_blank" class="card-link">
-                        <img class="card-image" src="<?php echo htmlspecialchars($row['image_url']); ?>" alt="<?php echo htmlspecialchars($row['name']); ?>">
+                    <a href="../item_detail.php?id=<?php echo $row['id']; ?>" target="_blank" class="card-link">
+                        <img class="card-image" src="../<?php echo htmlspecialchars($row['image_url']); ?>" alt="<?php echo htmlspecialchars($row['name']); ?>">
                         <div class="card-content">
                             <div class="category">Religious sites • <?php echo htmlspecialchars($row['category']); ?></div>
                             <div class="attraction-name"><?php echo htmlspecialchars($row['name']); ?></div>

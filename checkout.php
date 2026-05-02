@@ -7,7 +7,7 @@ if (!isset($_SESSION['user_id'])) { // Changed to user_id for consistency
     exit();
 }
 
-include 'includes/database_conn.php'; // connect to DB
+require_once 'db_connection.php';
 
 // 1) read & sanitize the item_id
 $itemId = (int)($_GET['id'] ?? 0);
