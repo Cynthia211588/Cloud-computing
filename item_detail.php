@@ -23,12 +23,12 @@ if (isset($_GET['id'])) {
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>ExploreMY</title>
 	
-	<link rel="stylesheet" href="style/wishlist.css">
-	<link rel="stylesheet" href="style/footer.css">
+	<link rel="stylesheet" href="https://travel-itinerary-malcolm.s3.ap-southeast-1.amazonaws.com/style/wishlist.css">
+	<link rel="stylesheet" href="https://travel-itinerary-malcolm.s3.ap-southeast-1.amazonaws.com/style/footer.css">
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 	
-	<link rel="stylesheet" href="style/myStyle.css">
-	<link rel="stylesheet" href="style/detailPageStyle.css">
+	<link rel="stylesheet" href="https://travel-itinerary-malcolm.s3.ap-southeast-1.amazonaws.com/style/myStyle.css">
+	<link rel="stylesheet" href="https://travel-itinerary-malcolm.s3.ap-southeast-1.amazonaws.com/style/detailPageStyle.css">
 	<style>
   .error-msg {
   display: block;

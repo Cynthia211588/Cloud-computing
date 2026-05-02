@@ -45,7 +45,7 @@ $nonMalTotal   = floatval($_GET['nonMalaysianTotal'] ?? 0);
 <html>
 <head>
 	<title>ExploreMY</title>
-	<link rel="stylesheet" href="style/myStyle.css">
+	<link rel="stylesheet" href="https://travel-itinerary-malcolm.s3.ap-southeast-1.amazonaws.com/style/myStyle.css">
 	 <style>
     /* Error styling */
     .error {

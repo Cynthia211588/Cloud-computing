@@ -39,7 +39,7 @@ $image = $_GET['image'] ?? ($item['image'] ?? '');
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Explore MY</title>
-  <link rel="stylesheet" href="style/myStyle.css">
+  <link rel="stylesheet" href="https://travel-itinerary-malcolm.s3.ap-southeast-1.amazonaws.com/style/myStyle.css">
 </head>
 <body>
   <div class="success-container">

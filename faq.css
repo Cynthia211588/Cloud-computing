@@ -22,7 +22,7 @@ main {
 }
 
 .header{
-    background-image: linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.7)), url('images/header.jpg');
+    background-image: linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.7)), url('https://travel-itinerary-malcolm.s3.ap-southeast-1.amazonaws.com/images/header.jpg');
     background-position: top center;
     background-repeat: no-repeat;
     background-size: cover;

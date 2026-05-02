@@ -17,8 +17,8 @@ if (session_status() === PHP_SESSION_NONE) {
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
 
     <!-- Custom CSS -->
-    <link rel="stylesheet" href="assets/css/about.css">
-    <link rel="stylesheet" href="style/footer.css">
+    <link rel="stylesheet" href="https://travel-itinerary-malcolm.s3.ap-southeast-1.amazonaws.com/assets/css/about.css">
+    <link rel="stylesheet" href="https://travel-itinerary-malcolm.s3.ap-southeast-1.amazonaws.com/style/footer.css">
 
 </head>
 <body>
@@ -29,13 +29,13 @@ if (session_status() === PHP_SESSION_NONE) {
     <!-- ===== Hero Slideshow ===== -->
     <div class="hero-slideshow">
         <div class="slides active">
-            <img src="images/about1.jpg" alt="Malaysia Travel">
+            <img src="https://travel-itinerary-malcolm.s3.ap-southeast-1.amazonaws.com/images/about1.jpg" alt="Malaysia Travel">
         </div>
         <div class="slides">
-            <img src="images/about2.jpg" alt="Malaysia Nature">
+            <img src="https://travel-itinerary-malcolm.s3.ap-southeast-1.amazonaws.com/images/about2.jpg" alt="Malaysia Nature">
         </div>
         <div class="slides">
-            <img src="images/about3.jpg" alt="Malaysia Culture">
+            <img src="https://travel-itinerary-malcolm.s3.ap-southeast-1.amazonaws.com/images/about3.jpg" alt="Malaysia Culture">
         </div>
 
         <!-- Overlay Text -->
@@ -65,17 +65,17 @@ if (session_status() === PHP_SESSION_NONE) {
     <section class="features container my-5 text-center">
         <div class="row">
             <div class="col-md-4">
-                <img src="images/icons/savings.png" alt="Affordable" class="feature-icon">
+                <img src="https://travel-itinerary-malcolm.s3.ap-southeast-1.amazonaws.com/images/icons/savings.png" alt="Affordable" class="feature-icon">
                 <h3>Affordable Packages</h3>
                 <p>Enjoy competitive prices and exclusive travel deals tailored for all budgets.</p>
             </div>
             <div class="col-md-4">
-                <img src="images/icons/flexible.png" alt="Flexible" class="feature-icon">
+                <img src="https://travel-itinerary-malcolm.s3.ap-southeast-1.amazonaws.com/images/icons/flexible.png" alt="Flexible" class="feature-icon">
                 <h3>Flexible Itineraries</h3>
                 <p>Choose from different states and customize your trip based on your preferences.</p>
             </div>
             <div class="col-md-4">
-                <img src="images/icons/support.png" alt="Support" class="feature-icon">
+                <img src="https://travel-itinerary-malcolm.s3.ap-southeast-1.amazonaws.com/images/icons/support.png" alt="Support" class="feature-icon">
                 <h3>24/7 Support</h3>
                 <p>Our dedicated team ensures a smooth travel experience anytime, anywhere.</p>
             </div>

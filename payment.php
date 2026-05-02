@@ -47,7 +47,7 @@ if (!isset($_SESSION['user_id'])) {
 <html>
 <head>
 	<title>ExploreMY</title>
-	<link rel="stylesheet" href="style/myStyle.css">
+	<link rel="stylesheet" href="https://travel-itinerary-malcolm.s3.ap-southeast-1.amazonaws.com/style/myStyle.css">
   <style>
   .field-error {
   display: block;

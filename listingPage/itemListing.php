@@ -28,9 +28,9 @@ $attractionsResult = mysqli_query($conn, $sql);
 <head>
     <meta charset="UTF-8">
     <title><?php echo htmlspecialchars($stateName); ?> Attractions</title>
-    <link rel="stylesheet" href="itemListing.css">
+    <link rel="stylesheet" href="https://travel-itinerary-malcolm.s3.ap-southeast-1.amazonaws.com/itemListing.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <link rel="stylesheet" href="../style/footer.css">
+    <link rel="stylesheet" href="https://travel-itinerary-malcolm.s3.ap-southeast-1.amazonaws.com/style/footer.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
 </head>
@@ -144,7 +144,7 @@ $attractionsResult = mysqli_query($conn, $sql);
                      data-type="<?php echo $row['type']; ?>"
                      data-location="<?php echo htmlspecialchars($stateName); ?>">
                     <a href="../item_detail.php?id=<?php echo $row['id']; ?>" target="_blank" class="card-link">
-                        <img class="card-image" src="../<?php echo htmlspecialchars($row['image_url']); ?>" alt="<?php echo htmlspecialchars($row['name']); ?>">
+                        <img class="card-image" src="<?php echo htmlspecialchars($row['image_url']); ?>" alt="<?php echo htmlspecialchars($row['name']); ?>">
                         <div class="card-content">
                             <div class="category">Religious sites • <?php echo htmlspecialchars($row['category']); ?></div>
                             <div class="attraction-name"><?php echo htmlspecialchars($row['name']); ?></div>
@@ -177,7 +177,7 @@ $attractionsResult = mysqli_query($conn, $sql);
     </div>
 </div>
 
-<script src="itemListing.js"></script>
+<script src="https://travel-itinerary-malcolm.s3.ap-southeast-1.amazonaws.com/itemListing.js"></script>
 <!--this is to make sure header not overlap with content-->
 <script>
     document.addEventListener("DOMContentLoaded", () => {

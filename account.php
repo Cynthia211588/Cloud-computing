@@ -65,7 +65,7 @@ if (!$user) {
     <title>Edit Profile - ExploreMy</title>
     
 	<link rel="stylesheet" href="style/header.css">
-	<link rel="stylesheet" href="style/account.css">
+	<link rel="stylesheet" href="https://travel-itinerary-malcolm.s3.ap-southeast-1.amazonaws.com/style/account.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">

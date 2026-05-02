@@ -9,7 +9,7 @@ if (session_status() === PHP_SESSION_NONE) {
     <div class="container header-container">
         <div class="logo">
             <a href="../index.php" class="logo-link">
-                <img src="../assets/logo/light-mode-logo.png" alt="Logo" class="logo-img">
+                <img src="https://travel-itinerary-malcolm.s3.ap-southeast-1.amazonaws.com/assets/logo/light-mode-logo.png" alt="Logo" class="logo-img">
                 <span class="logo-explore">Explore</span><span class="logo-my">My.</span>
             </a>
         </div>

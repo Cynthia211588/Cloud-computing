@@ -10,7 +10,7 @@ $result = $conn->query($sql);
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Malaysia States Navigation</title>
-    <link rel="stylesheet" href="assets/css/navigation.css">
+    <link rel="stylesheet" href="https://travel-itinerary-malcolm.s3.ap-southeast-1.amazonaws.com/assets/css/navigation.css">
 </head>
 <body>
     <div class="container">
